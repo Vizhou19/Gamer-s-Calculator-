@@ -1,6 +1,59 @@
+/* * Fonts */
+
+ @font-face {
+    font-family: 'title';
+    src: url(/fonts/asusrog_regular.ttf);
+} 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* * HTML */
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* * Body */
 
 .heading {
     text-align: center;
-    font-family: 'Orbitron';
+    font-family: 'title';
+    color: #e0e0e0;
+}
+
+body {
+    align-items: center;
+    background-color: #000d1a;
+    display: flex; 
+}
+
+/* * Animation */
+
+/* TODO: put this line of code into a div and the buttons
+ TODO --> animation: color-change 4s infinite; */
+
+@keyframes color-change {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: red;
+    }
 }
