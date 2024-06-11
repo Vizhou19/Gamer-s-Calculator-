@@ -1,10 +1,9 @@
 /* * Fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
  @font-face {
     font-family: 'title';
     src: url(/fonts/asusrog_regular.ttf);
 } 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 /* * HTML */
 
@@ -27,6 +26,9 @@ html {
     text-align: center !important;
     font-family: 'title' !important;
     color: #e0e0e0;
+    position: relative;
+    bottom: 320px;
+    left: 365px;
 }
 
 body {
@@ -36,8 +38,9 @@ body {
     justify-content: center;
     height: inherit;
 }
+/* ? Just in case: font-display: swap; in body */
 
-.calc-buttons {
+.calc-button {
     font-family: 'Orbitron';
 }
 
@@ -47,6 +50,7 @@ body {
     flex-basis: 400px;
     height: 540px;
     padding: 20px 35px;
+    animation: color-change 25s infinite;
 }
 
 .screen  {
@@ -60,6 +64,7 @@ body {
     padding: 20px;
     text-align: left;
     width: 326px;
+    font-family: 'Orbitron';
 }
 
 /* * Animation */
@@ -73,18 +78,34 @@ body {
     0% {
         background-color: red;
     }
-    25% {
-        background-color: green;
+    10% {
+        background-color: orangered;
+    }
+    20% {
+        background-color: orange;
+    }
+    30% {
+        background-color: rgb(255, 209, 3);
+    }
+    40% {
+        background-color: yellow;
     }
     50% {
+        background-color: rgb(9, 255, 9);
+    }
+    60% {
+        background-color: rgb(2, 233, 250);
+    }
+    70% {
         background-color: blue;
     }
-    75% {
-        background-color: green;
+    80% {
+        background-color: violet;
+    }
+    90% {
+        background-color: purple;
     }
     100% {
         background-color: red;
     }
 }
-
-/* ? Just in case: font-display: swap; in body */
