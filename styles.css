@@ -24,8 +24,8 @@ html {
 /* * Body */
 
 .heading {
-    text-align: center;
-    font-family: 'title';
+    text-align: center !important;
+    font-family: 'title' !important;
     color: #e0e0e0;
 }
 
@@ -33,11 +33,40 @@ body {
     align-items: center;
     background-color: #000d1a;
     display: flex; 
+    justify-content: center;
+    height: inherit;
+}
+
+.calc-buttons {
+    font-family: 'Orbitron';
+}
+
+.calculator {
+    border: 1px solid white;
+    border-radius: 15px;
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen  {
+    border: 1px solid white;
+    background-color: white;
+    color: #29a329;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: left;
+    width: 326px;
 }
 
 /* * Animation */
 
-/* TODO: put this line of code into a div and the buttons
+/* TODO Reminder, This can't be a gamer's Calculator 
+ TODO Without RGB, so put this line of
+ TODO code into a div and the buttons
  TODO --> animation: color-change 4s infinite; */
 
 @keyframes color-change {
@@ -57,3 +86,5 @@ body {
         background-color: red;
     }
 }
+
+/* ? Just in case: font-display: swap; in body */
