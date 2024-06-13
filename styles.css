@@ -42,7 +42,23 @@ body {
 
 .calc-button {
     font-family: 'Orbitron';
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(35, 35, 35, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    flex-basis: 20%;
+    font-size: 24px;
+    height: 65px;
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
 
 .calculator {
     border: 1px solid white;
@@ -67,12 +83,22 @@ body {
     font-family: 'Orbitron';
 }
 
-/* * Animation */
+#enter, #add, #sub, #divide, #multiply {
+    color: white;
+    background-color: #000d1a;
+}
 
-/* TODO Reminder, This can't be a gamer's Calculator 
- TODO Without RGB, so put this line of
- TODO code into a div and the buttons
- TODO --> animation: color-change 4s infinite; */
+/* * Activation */
+
+.calc-button:hover {
+    background-color: inherit;
+}
+
+.calc-button:active {
+    background-color: white;
+}
+
+/* * Animation */
 
 @keyframes color-change {
     0% {
@@ -109,3 +135,6 @@ body {
         background-color: red;
     }
 }
+
+/* No one is here to judge me right now... This is
+my time right now, I'm Here to make my family proud. Let's Do this. */
