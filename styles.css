@@ -1,140 +1,136 @@
 /* * Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
- @font-face {
-    font-family: 'title';
-    src: url(/fonts/asusrog_regular.ttf);
-} 
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /* * HTML */
 
 html {
-    height: 100%;
-    box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* * Body */
 
 .heading {
-    text-align: center !important;
-    font-family: 'title' !important;
-    color: #e0e0e0;
-    position: relative;
-    bottom: 320px;
-    left: 365px;
+  text-align: center !important;
+  font-family: "Chakra Petch" !important;
+  color: #e0e0e0;
+  position: relative;
+  bottom: 320px;
+  left: 365px;
 }
 
 body {
-    align-items: center;
-    background-color: #000d1a;
-    display: flex; 
-    justify-content: center;
-    height: inherit;
+  align-items: center;
+  background-color: #000d1a;
+  display: flex;
+  justify-content: center;
+  height: inherit;
 }
 /* ? Just in case: font-display: swap; in body */
 
 .calc-button {
-    font-family: 'Orbitron';
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(35, 35, 35, 0.1);
-    border-radius: 3px;
-    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-    flex-basis: 20%;
-    font-size: 24px;
-    height: 65px;
+  font-family: "Orbitron";
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(35, 35, 35, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  flex-basis: 20%;
+  font-size: 24px;
+  height: 65px;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
 }
-
 
 .calculator {
-    border: 1px solid white;
-    border-radius: 15px;
-    flex-basis: 400px;
-    height: 540px;
-    padding: 20px 35px;
-    animation: color-change 25s infinite;
+  border: 1px solid white;
+  border-radius: 15px;
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
+  animation: color-change 25s infinite;
 }
 
-.screen  {
-    border: 1px solid white;
-    background-color: white;
-    color: #29a329;
-    border-radius: 5px;
-    box-shadow: 0 4px 30px;
-    font-size: 35px;
-    overflow: auto;
-    padding: 20px;
-    text-align: left;
-    width: 326px;
-    font-family: 'Orbitron';
+.screen {
+  border: 1px solid white;
+  background-color: white;
+  color: #29a329;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px;
+  font-size: 35px;
+  overflow: auto;
+  padding: 20px;
+  text-align: left;
+  width: 326px;
+  font-family: "Orbitron";
 }
 
-#enter, #add, #sub, #divide, #multiply {
-    color: white;
-    background-color: #000d1a;
+#enter,
+#add,
+#sub,
+#divide,
+#multiply {
+  color: white;
+  background-color: #000d1a;
 }
 
 /* * Activation */
 
 .calc-button:hover {
-    background-color: inherit;
+  background-color: inherit;
 }
 
 .calc-button:active {
-    background-color: white;
+  background-color: white;
 }
 
 /* * Animation */
 
 @keyframes color-change {
-    0% {
-        background-color: red;
-    }
-    10% {
-        background-color: orangered;
-    }
-    20% {
-        background-color: orange;
-    }
-    30% {
-        background-color: rgb(255, 209, 3);
-    }
-    40% {
-        background-color: yellow;
-    }
-    50% {
-        background-color: rgb(9, 255, 9);
-    }
-    60% {
-        background-color: rgb(2, 233, 250);
-    }
-    70% {
-        background-color: blue;
-    }
-    80% {
-        background-color: violet;
-    }
-    90% {
-        background-color: purple;
-    }
-    100% {
-        background-color: red;
-    }
+  0% {
+    background-color: red;
+  }
+  10% {
+    background-color: orangered;
+  }
+  20% {
+    background-color: orange;
+  }
+  30% {
+    background-color: rgb(255, 209, 3);
+  }
+  40% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: rgb(9, 255, 9);
+  }
+  60% {
+    background-color: rgb(2, 233, 250);
+  }
+  70% {
+    background-color: blue;
+  }
+  80% {
+    background-color: violet;
+  }
+  90% {
+    background-color: purple;
+  }
+  100% {
+    background-color: red;
+  }
 }
-
-/* No one is here to judge me right now... This is
-my time right now, I'm Here to make my family proud. Let's Do this. */
